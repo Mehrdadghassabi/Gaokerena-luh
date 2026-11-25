@@ -1,0 +1,96 @@
+\relax 
+\citation{b1}
+\citation{b2,b3}
+\@writefile{toc}{\contentsline {section}{\numberline {I}Introduction}{1}{}\protected@file@percent }
+\citation{b4}
+\citation{b5,b6}
+\citation{b7}
+\citation{b8,b9,b10}
+\citation{b2,b3}
+\citation{b1}
+\citation{b11}
+\citation{b12}
+\@writefile{toc}{\contentsline {section}{\numberline {II}Background and Related Work}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-A}}Uncertainty and Hallucination Detection}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-B}}Aya-Expanse and Gaokerena}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-C}}LLM Uncertainty Heads}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {III}Response Variability}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-A}}Metrics}{2}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces Five-run consistency on the September 2023 IBMSEE. Accuracy is the ensemble-answer accuracy (\%) with not-agreed questions counted as incorrect; entropy is the mean per-question Shannon entropy in bits over valid runs (see text).}}{2}{}\protected@file@percent }
+\newlabel{tab:instability}{{I}{2}{}{table.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-B}}Findings}{2}{}\protected@file@percent }
+\citation{b13}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Five-run response variability on the 168-question September 2023 Iranian Basic Medical Sciences Entrance Examination. Entropy is computed over valid answer options; exact agreement is the percentage of questions for which all five valid runs select the same option. Med-Gemma is a 4B comparison model, not an Aya-Expanse derivative.}}{3}{}\protected@file@percent }
+\newlabel{fig:response_variability}{{1}{3}{}{figure.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {IV}Native Persian Claim-Level Dataset}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-A}}Dataset Construction}{3}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {II}{\ignorespaces Statistics of the two native Persian uncertainty datasets.}}{3}{}\protected@file@percent }
+\newlabel{tab:data}{{II}{3}{}{table.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-B}}Pairing of the Two Datasets}{4}{}\protected@file@percent }
+\newlabel{sec:pairing}{{\mbox  {IV-B}}{4}{}{subsection.4.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-C}}Dataset Composition and Label Distribution}{4}{}\protected@file@percent }
+\newlabel{sec:stats}{{\mbox  {IV-C}}{4}{}{subsection.4.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-D}}Topic Coverage and Representativeness}{4}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {III}{\ignorespaces Inventory-level topic distribution shared by LUH-V and LUH-R.}}{4}{}\protected@file@percent }
+\newlabel{tab:topiccoverage}{{III}{4}{}{table.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {IV}{\ignorespaces Claim-level label distribution by split, entity type, and part of the entity list. Rate = hallucinated claims as a percentage of supported plus hallucinated claims.}}{4}{}\protected@file@percent }
+\newlabel{tab:stats}{{IV}{4}{}{table.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-E}}Split Construction and Overlap Caveat}{4}{}\protected@file@percent }
+\newlabel{sec:split}{{\mbox  {IV-E}}{4}{}{subsection.4.5}{}}
+\citation{b1}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Claim-label composition in the released datasets. Percentages use all extracted claims as the denominator; undecided claims are retained in the datasets but excluded from the supervised binary loss.}}{5}{}\protected@file@percent }
+\newlabel{fig:label_distribution}{{2}{5}{}{figure.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-F}}Claim Extraction and Token Alignment}{5}{}\protected@file@percent }
+\newlabel{sec:align}{{\mbox  {IV-F}}{5}{}{subsection.4.6}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {V}{\ignorespaces Claim-to-token alignment statistics of the two datasets.}}{5}{}\protected@file@percent }
+\newlabel{tab:align}{{V}{5}{}{table.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-G}}Annotation Validation}{5}{}\protected@file@percent }
+\newlabel{sec:annval}{{\mbox  {IV-G}}{5}{}{subsection.4.7}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {VI}{\ignorespaces Agreement between the two medical experts and between the DeepSeek judge and the experts (95\% cluster-bootstrap intervals over answers; incorrect is the positive class; $n$ = claims compared).}}{5}{}\protected@file@percent }
+\newlabel{tab:annval}{{VI}{5}{}{table.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {V}Uncertainty Head}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-A}}Architecture}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-B}}Inference Cost Considerations}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-C}}Training Objective}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-D}}Adapter Merging and Reproducibility}{6}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {VII}{\ignorespaces Training configuration used for both uncertainty heads.}}{6}{}\protected@file@percent }
+\newlabel{tab:training}{{VII}{6}{}{table.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-E}}Implementation Corrections}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-F}}Validation and Test Isolation}{6}{}\protected@file@percent }
+\citation{b1}
+\citation{b1}
+\citation{b1}
+\citation{b1}
+\@writefile{toc}{\contentsline {section}{\numberline {VI}Results}{7}{}\protected@file@percent }
+\newlabel{sec:results}{{VI}{7}{}{section.6}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {VIII}{\ignorespaces Claim-level uncertainty-head performance on the held-out test splits (\%).}}{7}{}\protected@file@percent }
+\newlabel{tab:results}{{VIII}{7}{}{table.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-A}}Gaokerena-V}{7}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-B}}Gaokerena-R}{7}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-C}}Comparison Across Backbones}{7}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-D}}Cross-Study PR-AUC Comparison}{7}{}\protected@file@percent }
+\citation{b1}
+\citation{b1}
+\citation{b1}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces PR-AUC comparison between published English-language results and the Persian medical results in this study. English results are taken from Shelmanov et al.~\cite  {b1}: Mistral 7B Instruct v0.2 on English biographies and seven English out-of-domain domains; Gemma 2 9B Instruct on its English biography test set; and Llama 3.1 8B Instruct on English biographies and seven English out-of-domain domains. For the Mistral and Llama out-of-domain groups, the bars show the arithmetic mean across the seven published English domains. No confidence intervals, error bars, or domain-range whiskers are displayed. Gaokerena-V and Gaokerena-R are evaluated on Persian medical data in the present study. This is a contextual cross-study comparison, not a controlled leaderboard, because languages, domains, datasets, annotation procedures, and test distributions differ.}}{8}{}\protected@file@percent }
+\newlabel{fig:results}{{3}{8}{}{figure.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-E}}Review Workload at the Selected Thresholds}{8}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {IX}{\ignorespaces Training-set size and in-domain test PR-AUC in the original LUH study and this work.}}{8}{}\protected@file@percent }
+\newlabel{tab:training_scale}{{IX}{8}{}{table.9}{}}
+\bibcite{b1}{1}
+\bibcite{b2}{2}
+\bibcite{b3}{3}
+\bibcite{b4}{4}
+\bibcite{b5}{5}
+\bibcite{b6}{6}
+\bibcite{b7}{7}
+\bibcite{b8}{8}
+\bibcite{b9}{9}
+\bibcite{b10}{10}
+\bibcite{b11}{11}
+\bibcite{b12}{12}
+\bibcite{b13}{13}
+\@writefile{toc}{\contentsline {section}{\numberline {VII}Limitations}{9}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {VIII}Conclusion}{9}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{References}{9}{}\protected@file@percent }
+\gdef \@abspage@last{9}
